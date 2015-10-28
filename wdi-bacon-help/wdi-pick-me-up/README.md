@@ -1,7 +1,5 @@
 ## WDI Pick-Me-Up
 
-![A sample compliment](imgs/compliment.png)
-
 You have been tasked with creating your own version of [Emergency Compliment](http://emergencycompliment.com/), except with  WDI-themed compliments. When a user visits the site, they should be greeted with a WDI-themed compliment to cheer them up.
 
 ### Learning Objectives
