@@ -1,5 +1,6 @@
 module Compliments
-	word_list = [
+
+	WORD_LIST = [
 	"adorable",
 	"accepted",
 	"acclaimed",
