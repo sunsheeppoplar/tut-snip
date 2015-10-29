@@ -1,3 +1,5 @@
+require 'sinatra'
+
 module ComplimentApp
 
 	class Server < Sinatra::Base
