@@ -5,7 +5,10 @@
 	<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<div class="container" id="oink"></div>
-<div class="container" id="right">Hey, <span id="special"><%= @name %></span>, you're <%= @compliments[@number.to_i] %>.</div>
+	<div class="container" id="oink"></div>
+	<div class="container" id="right"> 
+		Hey, <span id="special"><%= @name.capitalize %></span>, you're 
+		<a href="https://github.com/sunsheeppoplar/tut-snip/tree/master/wdi-bacon-help/wdi-pick-me-up" target=_blank><%= @compliments[@number.to_i] %></a>.
+	</div>
 </body>
 </html>

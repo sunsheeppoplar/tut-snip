@@ -23,3 +23,16 @@ body {
 	color: gold;
 	font-style: italic;
 }
+
+a:link{
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
