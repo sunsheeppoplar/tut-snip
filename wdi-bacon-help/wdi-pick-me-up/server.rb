@@ -3,9 +3,9 @@ module ComplimentApp
 	class Server < Sinatra::Base
 
 		get '/' do
-		@compliments = Compliments::word_list
+		@compliments = Compliments::WORD_LIST
 
-		erb: index
+		erb :index
 		end # / route
 
 	end # Server
