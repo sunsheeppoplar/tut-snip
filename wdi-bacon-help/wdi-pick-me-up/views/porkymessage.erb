@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="UTF-8">	
+	<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<div>Hey, <%= @name %>, you're <%= @compliments[@number.to_i] %></div>
+<div class="container" id="oink"></div>
+<div class="container" id="right">Hey, <span id="special"><%= @name %></span>, you're <%= @compliments[@number.to_i] %>.</div>
 </body>
 </html>

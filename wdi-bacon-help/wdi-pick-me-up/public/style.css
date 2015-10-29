@@ -1,0 +1,25 @@
+body {
+	background-color: black;
+}
+.container {
+	display: inline-block;
+	margin: 20px;
+	padding: 20px;
+}
+
+#oink {
+	background-image: url("/assets/little_miss_piggy.jpg");
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 350px;
+}
+
+#right {
+	font-size: 50px;
+	color: white;
+}
+
+#special:hover {
+	color: gold;
+	font-style: italic;
+}
