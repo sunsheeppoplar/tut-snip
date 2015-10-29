@@ -2,13 +2,17 @@ module ComplimentApp
 
 	class Server < Sinatra::Base
 
-		get '/next-a-name/:name/then-a-number/:number' do
-		@compliments = Compliments::WORD_LIST
-		@name = params[:name]
-		@number = params[:number]
+		get '/' do
+			erb :index
+		end # index route
 
-		erb :index
-		end # route
+		get '/next-a-name/:name/then-a-number/:number' do
+			@compliments = Compliments::WORD_LIST
+			@name = params[:name]
+			@number = params[:number]
+
+			erb :porkymessage
+		end # custom route
 
 	end # Server
 end # ComplimentApp
