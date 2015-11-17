@@ -1,0 +1,12 @@
+{
+  "name": "vamp-mongoose",
+  "version": "0.0.0",
+  "description": "![Interview with the Vampire](https://mischiefmanagedsite.files.wordpress.com/2014/05/3.gif)",
+  "main": "seed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
