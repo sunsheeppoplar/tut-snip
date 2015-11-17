@@ -3,7 +3,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 
 // local modules
-var Vampire = require('../model/vampire.js'); // Mongoose model
+var Vampire = require('../models/vampire.js'); // Mongoose model
 
 // instantiate express
 var app = express();
