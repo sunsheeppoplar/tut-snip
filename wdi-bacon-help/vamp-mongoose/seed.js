@@ -1,7 +1,7 @@
 // got to require it anywhere need mongoose commands 
 var mongoose = require('mongoose');
 // bring in our Vampire model 
-var Vampire = require('./model.js');
+var Vampire = require('./models/vampire.js');
 
 // connect our Mongoose ODM to our MongoDB
 mongoose.connect('mongodb://localhost/vampMongoose', function(err) {
@@ -12,17 +12,6 @@ mongoose.connect('mongodb://localhost/vampMongoose', function(err) {
     console.log('connection successful');
   }
 }); 
-
-// time to insert that array below 
-Vampire.collection.insert(vampires, onInsert);
-
-var onInsert = function(err, docs) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log('Vampires stored away...');
-  }
-};
 
 // wrap up our seed data in an array for insertion
 var vampires = [
@@ -163,3 +152,14 @@ var vampires = [
     title: 'Osiris of Sewer Rats'
   }
 ];
+
+// time to insert that array above 
+Vampire.collection.insert(vampires, onInsert);
+
+var onInsert = function(err, docs) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log('Vampires stored away...', docs.length);
+  }
+};
