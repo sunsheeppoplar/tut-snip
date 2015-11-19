@@ -14,7 +14,7 @@ var vampSchema = new mongoose.Schema({
 	victims: Number
 });
 
-// conversion of our schema into a model
+// 'conversion' of our schema into a model
 var Vampire = mongoose.model('Vampire', vampSchema);
 
 // make this sucker (get it? unintentional pun) available elsewhere, like the server...
