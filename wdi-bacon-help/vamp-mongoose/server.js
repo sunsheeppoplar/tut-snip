@@ -32,3 +32,13 @@ app.get('/', function(req, res) {
 	// defaults to our index page within public folder anyhow
 	res.render('index.html')
 });
+
+app.get('/vampires', function(req, res) {
+	Vampire.find().exec(function(err, vampires) {
+		if (err) {
+			console.log(err)
+		} else {
+			res.send(vampires)
+		}
+	})
+})
