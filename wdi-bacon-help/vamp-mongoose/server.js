@@ -3,7 +3,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 
 // local modules
-var Vampire = require('../models/vampire.js'); // Mongoose model
+var Vampire = require('./models/vampire.js'); // Mongoose model
 
 // instantiate express
 var app = express();
@@ -13,5 +13,22 @@ app.use(express.static('public'));
 
 // node port
 app.listen(3000, function() {
-	console.log('Server on 3k');
+	console.log('Server running on 3k');
+});
+
+// connect our Mongoose ODM to our MongoDB
+mongoose.connect('mongodb://localhost/vampMongoose', function(err) {
+  // will instantiate a db with any name if there isn't one available with that name already
+  if (err) {
+    console.log('database connection error', err);
+  } else {
+    console.log('database connection successful');
+  }
+});
+
+// routes
+
+app.get('/', function(req, res) {
+	// defaults to our index page within public folder anyhow
+	res.render('index.html')
 });
